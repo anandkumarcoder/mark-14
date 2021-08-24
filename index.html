@@ -6,28 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profilt & Loss calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
+        
         <h2>Stock profit and loss calculator</h2>
 
-        <label for="intialPrice"> Intial Price
-            <input type="number" id="initalPrice" placeholder="Enter the intial price of stock">
+        <label for="initialPrice"> Intial Price
+            <input type="number" id="initialPrice" placeholder="Enter the intial price of stock" required minlength="1">
 
         </label>
 
         <label for="quantity"> Quantity of stock
-            <input type="number" id="quantity" placeholder="Enter the quantity of stock">
+            <input type="number" id="quantity" placeholder="Enter the quantity of stock" required minlength="1">
 
         </label>
 
         <label for="currentPrice"> currentPrice
-            <input type="number" id="currentPrice" placeholder="Enter the current price of stock">
+            <input type="number" id="currentPrice" placeholder="Enter the current price of stock" required minlength="1">
 
         </label>
 
+    
+
         <button id="calculate-btn">Calculate</button>
-        <div id="outpud"></div>
+        <div id="output"></div>
+
+
+        <footer class="footer">
+            <div class="footer-header">Connect with me</div>
+    
+            <a href="https://twitter.com/5_Anand" class="fa fa-twitter"></a>
+    
+    
+            <a href="https://github.com/anandkumarcoder" class="fa fa-github"></a>
+    
+    
+            <a href="https://www.linkedin.com/in/anand-kumar-041157ab/" class="fa fa-linkedin"></a>
+    
+        </footer>
+
+    
     </main>
     
 </body>
