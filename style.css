@@ -1,18 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+
+
+
+
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box
 }
 
+:root{
+    --primary-color : #1091BC;
+     /* e9c46a 0A5770 1091BC  2CA093 279185 264653 40768C  1091BC*/
+}
+
 
 body{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
+    font-family: 'Noto Sans SC', sans-serif;
+    color: var(--primary-color);
 }
+
+/* main */
+
+h2{
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+label{
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    font-weight: bold;
+    
+   
+}
+
+input{
+    padding: .7rem 1rem;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 25px;
+    border: 5px solid black;
+
+}
+
+#calculate-btn{
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+    border-color: black;
+}
+
+
+
 
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
+    
+    display: block;
+    font-weight: bold;
+}
+
+
+a{
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.fa{
+    color: var(--primary-color);
 }
