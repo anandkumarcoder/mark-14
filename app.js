@@ -12,8 +12,9 @@ function clickHandler(e) {
     var qty = Number(quantity.value)
     var sp = Number(currentPrice.value)
 
-    if (ip === 0 || qty === 0 || sp === 0) {
-        showMessage("fields cannot be empty")
+    if (ip === 0 || ip <0 || qty === 0 || qty < 0 ||
+         sp === 0 || sp < 0 ) {
+        showMessageError("fields cannot be empty")
     } else {
         calculateProfitAndLoss(ip, qty, sp)
     }
@@ -60,4 +61,12 @@ function calculateProfitAndLoss(initialPrice, quantity, currentPrice) {
 
 function showMessage(message) {
     outputDiv.innerHTML = message;
+    outputDiv.style.color = "#1091BC";
+    outputDiv.style.fontWeight = "bold"
+}
+
+function showMessageError(message){
+    outputDiv.innerHTML = message;
+    outputDiv.style.color = "red"
+    outputDiv.style.fontWeight = "bold"
 }

@@ -20,7 +20,7 @@ html{
 
 
 body{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     font-family: 'Noto Sans SC', sans-serif;
     color: var(--primary-color);
@@ -62,7 +62,7 @@ input{
     display: block;
     margin: 1rem auto;
     padding: 1rem 2rem;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     background-color: var(--primary-color);
     border-radius: 20px;
@@ -71,12 +71,14 @@ input{
 }
 
 
+#output{
+    padding : 2rem 1rem;
+    margin: 1rem auto;
+}
+
 
 
 footer{
-    
-    
-    
      
     width: 100%;
     text-align: center;
