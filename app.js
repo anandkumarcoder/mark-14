@@ -14,14 +14,10 @@ function clickHandler(e) {
 
     if (ip === 0 || ip <0 || qty === 0 || qty < 0 ||
          sp === 0 || sp < 0 ) {
-        showMessageError("fields cannot be empty")
+        showMessageError("fields cannot be empty or less than zero")
     } else {
         calculateProfitAndLoss(ip, qty, sp)
     }
-
-
-
-
 }
 
 
@@ -29,8 +25,6 @@ function clickHandler(e) {
 
 
 function calculateProfitAndLoss(initialPrice, quantity, currentPrice) {
-
-
 
 
     if (currentPrice > initialPrice) {
@@ -49,10 +43,9 @@ function calculateProfitAndLoss(initialPrice, quantity, currentPrice) {
         showMessage(`hey you made a loss of ${loss.toFixed(2)} and the percentage is ${lossPercentage.toFixed(2)} %`)
 
     }
-    // else if ( initialPrice=currentPrice){
-    //      showMessage("you have not made profit or loss")//
+    
     else {
-        showMessage("no pain no gain")
+        showMessage("You have made no profit or loss")
     }
 
 
